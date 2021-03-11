@@ -12,7 +12,6 @@ def enterKey(key):
 def findKey(s):
 
     a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-    t = 0
     for i in range(len(s)):
         try:
             if (s[i] in a) and (s[i + 5] == '-') and (s[i + 11] == '-'):
