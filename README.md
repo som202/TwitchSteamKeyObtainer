@@ -1,4 +1,4 @@
-# TriKoolKeyObtainer
+# TwitchSteamKeyObtainer
 Python script that parses twitch chat for steam keys
 
 **Requirements**
