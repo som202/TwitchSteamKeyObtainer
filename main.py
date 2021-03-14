@@ -19,6 +19,7 @@ def findKey(s):
                 s = s[t:]
                 s = s[0:17]
                 enterKey(s)
+                print(f"Found and activated key: {s}")
                 break
         except:
             continue
@@ -35,6 +36,7 @@ sock.connect((server, port))
 sock.send(f"PASS {token}\n".encode('utf-8'))
 sock.send(f"NICK {username}\n".encode('utf-8'))
 sock.send(f"JOIN {channel}\n".encode('utf-8'))
+print("- Scanning chat... Place your cursor on the textbox where u enter the key..    . (ctrl+c to stop)")
 
 while True:
     res = sock.recv(2048).decode('utf-8')
