@@ -15,8 +15,7 @@ def findKey(s):
     for i in range(len(s)):
         try:
             if (s[i] in a) and (s[i + 5] == '-') and (s[i + 11] == '-'):
-                t = i
-                s = s[t:]
+                s = s[i:]
                 s = s[0:17]
                 enterKey(s)
                 print(f"Found and activated key: {s}")
